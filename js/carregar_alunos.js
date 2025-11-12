@@ -21,27 +21,6 @@ const dadosAlunosFallback = {
             "idade": 12,
             "faixa": "Amarela",
             "tempo": "1 ano"
-        },
-        {
-            "foto": "img/placeholderjpg",
-            "nome": "Mariana Oliveira",
-            "idade": 17,
-            "faixa": "Azul",
-            "tempo": "3 anos"
-        },
-        {
-            "foto": "img/placeholderjpg",
-            "nome": "João Santos",
-            "idade": 14,
-            "faixa": "Verde",
-            "tempo": "1.5 anos"
-        },
-        {
-            "foto": "img/placeholderjpg",
-            "nome": "Pedro Alves",
-            "idade": 16,
-            "faixa": "Vermelha",
-            "tempo": "4 anos"
         }
     ]
 };
