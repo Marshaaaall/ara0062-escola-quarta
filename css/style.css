@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     min-height: 100vh;
 }
 
-
 .container {
     width: 90%;
     max-width: 1200px;
@@ -23,7 +21,7 @@ body {
     flex: 1;
 }
 
-
+/* Header e Navegação */
 header {
     background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
     color: white;
@@ -60,12 +58,12 @@ nav ul li a:hover {
     transform: translateY(-2px);
 }
 
-
+/* Conteúdo Principal */
 main {
     padding: 2rem 0;
 }
 
-
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -123,7 +121,7 @@ main {
     padding-left: 0.5rem;
 }
 
-/* Tabela de faixas */
+/* Tabelas gerais */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -162,7 +160,7 @@ tr:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Formulário de contato */
+/* Formulários gerais */
 form {
     background: white;
     padding: 2.5rem;
@@ -172,31 +170,32 @@ form {
     margin: 0 auto;
 }
 
-select{
+select {
     background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
     border: none;
-    color: #ddd;
+    color: white;
     padding: 7px 15px;
     border-radius: 25px;
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.3s ease;
     box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.1);
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
-select:hover{
+select:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(26, 35, 126, 0.4);
 }
 
-option{
+option {
     color: #000;
+    background-color: white;
 }
 
 .form-group {
-    
     margin-bottom: 1.5rem;
-
 }
 
 label {
@@ -221,7 +220,7 @@ input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(57, 73, 171, 0.1);
 }
 
-/* Botões */
+/* Botões gerais */
 button {
     background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
     color: white;
@@ -273,7 +272,7 @@ button:hover {
     color: #1a237e;
 }
 
-
+/* Footer */
 footer {
     background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
     color: white;
@@ -282,39 +281,57 @@ footer {
     margin-top: 3rem;
 }
 
-
-.page {
-    display: none;
-    animation: fadeIn 0.5s ease-in;
-}
-
-.page.active {
-    display: block;
-}
-
+/* Sistema de temas */
 .tema-escuro { 
-
-  background-color: #121212 !important;
-
+    background-color: #121212 !important;
+    color: #e0e0e0;
 } 
 
- 
-
-.tema-escuro header, .tema-escuro footer { 
-
-  background-color: #000; 
-
+.tema-escuro header, 
+.tema-escuro footer { 
+    background-color: #000; 
 } 
 
- 
+.tema-escuro .content-section,
+.tema-escuro form,
+.tema-escuro .team-list,
+.tema-escuro table {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border-left-color: #3949ab;
+}
 
-.tema-escuro main { 
+.tema-escuro th {
+    background: linear-gradient(135deg, #3949ab 0%, #1a237e 100%);
+}
 
-  background-color: #000000; 
+.tema-escuro input,
+.tema-escuro textarea,
+.tema-escuro select {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
 
+.tema-escuro input:focus,
+.tema-escuro textarea:focus,
+.tema-escuro select:focus {
+    border-color: #3949ab;
+}
 
-} 
+.tema-escuro .content-section h2 {
+    color: #3949ab;
+}
 
+.tema-escuro .content-section h3 {
+    color: #5c6bc0;
+}
+
+.tema-escuro .team-list strong {
+    color: #3949ab;
+}
+
+/* Animações */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -326,7 +343,16 @@ footer {
     }
 }
 
-/* Responsividade */
+.page {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Responsividade geral */
 @media (max-width: 768px) {
     .container {
         width: 95%;

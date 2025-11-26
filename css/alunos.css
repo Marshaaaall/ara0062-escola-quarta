@@ -1,0 +1,169 @@
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-adicionar {
+    background-color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+.btn-editar {
+    background-color: #f39c12;
+}
+
+.btn-excluir {
+    background-color: #e74c3c;
+}
+
+.btn-salvar {
+    background-color: #f39c12;
+}
+
+.btn-cancelar {
+    background-color: #95a5a6;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Mensagens de feedback */
+.sucesso {
+    color: #27ae60;
+    background-color: #d5f4e6;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #27ae60;
+}
+
+.erro {
+    color: #e74c3c;
+    background-color: #fadbd8;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #e74c3c;
+}
+
+/* Ações na tabela */
+.acoes {
+    white-space: nowrap;
+}
+
+/* Foto dos alunos */
+.foto-aluno {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+}
+
+/* Faixa dos alunos */
+.faixa-aluno {
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 80px;
+    display: inline-block;
+}
+
+/* Tabela de alunos específica */
+#tabela-alunos {
+    margin-top: 20px;
+}
+
+#tabela-alunos th:nth-child(1) { width: 80px; } /* Foto */
+#tabela-alunos th:nth-child(2) { width: 200px; } /* Nome */
+#tabela-alunos th:nth-child(3) { width: 80px; } /* Idade */
+#tabela-alunos th:nth-child(4) { width: 120px; } /* Faixa */
+#tabela-alunos th:nth-child(5) { width: 120px; } /* Tempo */
+#tabela-alunos th:nth-child(6) { width: 150px; } /* Ações */
+
+/* Formulários de alunos */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Tema escuro para página de alunos */
+.tema-escuro .btn-adicionar {
+    background-color: #27ae60;
+}
+
+.tema-escuro .btn-editar {
+    background-color: #e67e22;
+}
+
+.tema-escuro .btn-excluir {
+    background-color: #c0392b;
+}
+
+.tema-escuro .sucesso {
+    background-color: #1e8449;
+    color: #d5f4e6;
+}
+
+.tema-escuro .erro {
+    background-color: #922b21;
+    color: #fadbd8;
+}
+
+/* Responsividade para página de alunos */
+@media (max-width: 768px) {
+    #tabela-alunos {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+        margin: 2px;
+    }
+    
+    .foto-aluno {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    #tabela-alunos {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .acoes {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn {
+        margin: 2px 0;
+        text-align: center;
+    }
+}
