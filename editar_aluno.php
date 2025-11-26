@@ -203,8 +203,8 @@ $imagem_atual_tipo = filter_var($aluno['foto'], FILTER_VALIDATE_URL) ? 'url' : '
                 </div>
                 
                 <div class="form-actions">
-                    <button type="submit" class="btn-form btn-salvar">💾 Salvar Alterações</button>
-                    <a href="alunos.php" class="btn-form btn-cancelar-form">❌ Cancelar</a>
+                    <button type="submit" class="btn-form btn-salvar">Salvar Alterações</button>
+                    <a href="alunos.php" class="btn-form btn-cancelar-form">Cancelar</a>
                 </div>
             </form>
         </div>
